@@ -1,0 +1,124 @@
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #FFD1DC;
+    padding: 20px;
+    font-size: 24px;
+    color: #6D6875;
+    text-align: center;
+}
+
+/* Content utama */
+.content {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar kiri */
+.left-sidebar {
+    background-color: #FFB7B2;
+    width: 25%;
+    padding: 20px;
+    color: #6D6875;
+    text-align: center;
+}
+
+/* Konten utama */
+.main-content {
+    background-color: #FFDAC1;
+    width: 50%;
+    padding: 20px;
+    color: #6D6875;
+    text-align: center;
+}
+
+/* Sidebar kanan */
+.right-sidebar {
+    background-color: #E2F0CB;
+    width: 25%;
+    padding: 20px;
+    color: #6D6875;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #B5EAD7;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+/* Footer div */
+.footer div {
+    background-color: #C7CEEA;
+    padding: 10px;
+    width: 23%;
+    color: #6D6875;
+}
+
+/* Form container */
+.form-container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form labels */
+.form-container label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input, textarea, dan select */
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 8%;
+    margin-top: 5px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+/* Radio button styling */
+.form-container input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Radio button group */
+.form-container .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Submit button */
+.form-container input[type="submit"] {
+    background-color: #6D6875;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}

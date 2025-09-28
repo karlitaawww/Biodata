@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #6D6875;
+        }
+
+        /* Container form */
+        .form-container {
+            background-color: #FDD7B0;
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Styling form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Input dan textarea */
+        input[type="text"],
+        textarea,
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Grouping radio button */
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .gender-group input {
+            margin-right: 5px;
+        }
+
+        /* Tombol */
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer; 
+        }
+
+        button[type="submit"] {
+            background-color: #6D6875;
+        }
+
+        button.reset-btn {
+            background-color: #e5e5e5;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Biodata</h2>
+        <form action="#" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="deskripsi">Deskripsi Diri:</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+
+            <label>Jenis Kelamin:</label>
+            <div class="gender-group">
+                <input type="radio" id="laki" name="gender" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+
+            <label for="negara">Negara:</label>
+            <select id="negara" name="negara">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapura">Singapura</option>
+                <option value="Thailand">Thailand</option>
+            </select>
+
+            <label for="foto">Upload Foto:</label>
+            <input type="file" id="foto" name="foto">
+
+            <button type="submit">Simpan</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
